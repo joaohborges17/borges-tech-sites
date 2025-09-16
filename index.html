@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borges Tech Solution - Desenvolvimento de Sites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Borges Tech Solution</h1>
+            <!-- Substitua por sua logo -->
+            <!-- <img src="logo.png" alt="Borges Tech Solution Logo" style="height: 50px;"> -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Desenvolvimento de Sites Sob Medida</h2>
+        <p>Crie seu site profissional com a Borges Tech Solution.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Pacotes de Sites</h2>
+        <div class="produto">
+            <h3>Site Corporativo</h3>
+            <p>Site profissional com até 5 páginas. Preço: R$ 3.500,00</p>
+            <button onclick="adicionarAoCarrinho('Site Corporativo', 3500)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <h3>E-commerce Básico</h3>
+            <p>Loja virtual com até 20 produtos. Preço: R$ 5.000,00</p>
+            <button onclick="adicionarAoCarrinho('E-commerce Básico', 5000)">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <h3>Portfólio Pessoal</h3>
+            <p>Site para exibir seu trabalho. Preço: R$ 1.800,00</p>
+            <button onclick="adicionarAoCarrinho('Portfólio Pessoal', 1800)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho"></ul>
+        <p>Total: R$ <span id="total">0</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Email: contato@borgestech.com | Telefone: (11) 99999-9999</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Borges Tech Solution. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
