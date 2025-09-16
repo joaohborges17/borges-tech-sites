@@ -3,20 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desenvolvimento de sites sob medida pela Borges Tech Solution. Oferecemos sites corporativos, e-commerce e portfólios pessoais.">
+    <meta name="keywords" content="desenvolvimento de sites, site corporativo, e-commerce, portfólio, Borges Tech Solution">
+    <meta name="author" content="Borges Tech Solution">
+    <meta name="robots" content="index, follow">
     <title>Borges Tech Solution - Desenvolvimento de Sites</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Firebase CDN (para backend simulado) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>Borges Tech Solution</h1>
-            <!-- Substitua por sua logo -->
-            <!-- <img src="logo.png" alt="Borges Tech Solution Logo" style="height: 50px;"> -->
+            <img src="logo.png" alt="Borges Tech Solution Logo" style="height: 50px;">
         </div>
         <nav>
-            <ul>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
                 <li><a href="#carrinho">Carrinho</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -25,7 +32,7 @@
 
     <section id="home">
         <h2>Desenvolvimento de Sites Sob Medida</h2>
-        <p>Crie seu site profissional com a Borges Tech Solution.</p>
+        <p>Transforme sua visão em um site profissional com a Borges Tech Solution.</p>
     </section>
 
     <section id="servicos">
@@ -47,6 +54,20 @@
         </div>
     </section>
 
+    <section id="portfolio">
+        <h2>Exemplos de Projetos</h2>
+        <div class="projeto">
+            <img src="https://via.placeholder.com/300x200?text=Site+Corporativo" alt="Site Corporativo - Empresa XYZ">
+            <h3>Site Corporativo - Empresa XYZ</h3>
+            <p>Design moderno e responsivo.</p>
+        </div>
+        <div class="projeto">
+            <img src="https://via.placeholder.com/300x200?text=E-commerce" alt="E-commerce - Loja ABC">
+            <h3>E-commerce - Loja ABC</h3>
+            <p>Loja virtual com 15 produtos.</p>
+        </div>
+    </section>
+
     <section id="carrinho">
         <h2>Carrinho de Compras</h2>
         <ul id="lista-carrinho"></ul>
@@ -56,6 +77,12 @@
 
     <section id="contato">
         <h2>Entre em Contato</h2>
+        <form id="form-contato">
+            <input type="text" id="nome" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="mensagem" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
         <p>Email: contato@borgestech.com | Telefone: (11) 99999-9999</p>
     </section>
 
